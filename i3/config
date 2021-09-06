@@ -19,8 +19,8 @@ font pango:monospace 12
 #
 focus_follows_mouse no
 
-gaps inner 10
-gaps outer 10
+gaps inner 20
+gaps outer 5
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -48,8 +48,8 @@ bindsym $mod+l exec "blurlock"
 bindsym $mod+k exec "playonlinux --run KakaoTalk"
 bindsym $mod+p exec "flameshot gui"
 bindsym $mod+Shift+h exec "clipmenu"
-bindsym XF86MonBrightnessUp exec "sudo xbacklight -inc 20"
-bindsym XF86MonBrightnessDown exec "sudo xbacklight -dec 20"
+bindsym XF86MonBrightnessUp exec "sudo xbacklight -inc 10"
+bindsym XF86MonBrightnessDown exec "sudo xbacklight -dec 10"
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -198,10 +198,21 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-#bar {
+bar {
         #status_command i3status
 	#status_command i3status-rs
-#}
+    colors {
+    background #282A36
+    statusline #F8F8F2
+    separator  #44475A
+
+    focused_workspace  #44475A #44475A #F8F8F2
+    active_workspace   #282A36 #44475A #F8F8F2
+    inactive_workspace #282A36 #282A36 #BFBFBF
+    urgent_workspace   #FF5555 #FF5555 #F8F8F2
+    binding_mode       #FF5555 #FF5555 #F8F8F2
+    }	
+}
 
 # Set Background wallpaper
 # https://www.reddit.com/r/i3wm/comments/b76zvi/autorandr_and_feh_not_playing_well_together/
@@ -209,4 +220,4 @@ exec_always --no-startup-id autorandr --change && feh --bg-scale --no-fehbg '/ho
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh --forest
 
 # Hide title bar
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 3
