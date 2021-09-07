@@ -216,7 +216,7 @@ bar {
 
 # Set Background wallpaper
 # https://www.reddit.com/r/i3wm/comments/b76zvi/autorandr_and_feh_not_playing_well_together/
-exec_always --no-startup-id autorandr --change && feh --bg-scale --no-fehbg '/home/yjwang/.config/i3/Tokyo1.jpg'
+exec_always --no-startup-id autorandr --change && feh --bg-scale --no-fehbg '/home/yjwang/.config/i3/tokyo-skyline.png'
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh --forest
 
 # Hide title bar
