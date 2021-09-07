@@ -33,3 +33,6 @@ https://github.com/adi1090x/polybar-themes
 https://github.com/Mayccoll/Gogh
 
 # Screenshot
+
+![](https://github.com/YoungjuWang/yjwang-dotfiles/blob/master/screenshot1.png?raw=true)
+![](https://github.com/YoungjuWang/yjwang-dotfiles/blob/master/screenshot2.png?raw=true)
