@@ -12,6 +12,7 @@ https://yjwang.tistory.com/165
 - flameshot
 - pcmanfm
 - rofi
+- polybar
 - neofetch
 - autorandr / arandr
 - blueman
@@ -22,6 +23,8 @@ https://yjwang.tistory.com/165
 - fcitx5
 - libreoffice-fresh
 - libreoffice-fresh-ko
+- virtual-box
+- remmina (true color 32bpp)
 
 # Polybar
 
