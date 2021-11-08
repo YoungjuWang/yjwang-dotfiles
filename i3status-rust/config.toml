@@ -1,0 +1,40 @@
+theme = "solarized-dark"
+icons = "awesome"
+#icons = "none"
+
+[[block]]
+block="toggle"
+text = "wg-vpn"
+command_state = "ip l show yjwang-lt"
+command_on = "wg-quick up yjwang-lt"
+command_off = "wg-quick down yjwang-lt"
+
+[[block]]
+block = "toggle"
+text = "drobo"
+command_on = "drobo mount"
+command_off = "drobo unmount"
+command_state = "mount |grep drobo"
+
+[[block]]
+block="net"
+format = "{ssid} {ip}"
+on_click = "networkmanager_dmenu"
+
+[[block]]
+block = "time"
+interval = 60
+format = "%a %m/%d %R"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "bluetooth"
+mac = "EB:44:97:E7:65:EC"
+format = "{label} {percentage}"
+
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage} {time} {power}"
