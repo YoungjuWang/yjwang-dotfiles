@@ -1,0 +1,33 @@
+#! /bin/bash
+
+echo """  
+Usage:
+
+# drobo <mount|unmount>
+
+"""
+
+if [ $# -eq 0 ]  
+then  
+echo "Please Input Arguments <mount|umount>"  
+exit 5  
+fi
+
+if [ $1 = "mount" ]  
+then  
+sudo /usr/bin/mount -o uid=9362 /mnt/drobo/public  
+sudo /usr/bin/mount -o uid=9362 /mnt/drobo/shared  
+sudo /usr/bin/mount -o uid=9362 /mnt/drobo/yjwang  
+df -h   
+exit 0  
+fi
+
+  
+if [ $1 = "unmount" ]  
+then  
+sudo /usr/bin/umount -o uid=9362 /mnt/drobo/public  
+sudo /usr/bin/umount -o uid=9362 /mnt/drobo/shared  
+sudo /usr/bin/umount -o uid=9362 /mnt/drobo/yjwang  
+df -h  
+exit 0  
+fi
