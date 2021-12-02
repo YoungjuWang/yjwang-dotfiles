@@ -38,5 +38,5 @@ https://github.com/Mayccoll/Gogh
 
 # Screenshot
 
-![](https://github.com/YoungjuWang/yjwang-dotfiles/blob/master/screenshot1.png?raw=true)
-![](https://github.com/YoungjuWang/yjwang-dotfiles/blob/master/screenshot2.png?raw=true)
+![](https://github.com/YoungjuWang/yjwang-dotfiles/blob/master/screenshot3.png?raw=true)
+![](https://github.com/YoungjuWang/yjwang-dotfiles/blob/master/screenshot4.png?raw=true)
