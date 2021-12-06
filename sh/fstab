@@ -1,0 +1,4 @@
+# Drobo
+//x.x.x.x/Shared /mnt/drobo/shared cifs vers=1.0,user=yjwang,pass=yjwang,noauto,uid=9362 0 0
+//x.x.x.x/Public /mnt/drobo/public cifs vers=1.0,user=yjwang,pass=yjwang,noauto,uid=9362 0 0
+//x.x.x.x/yjwang /mnt/drobo/yjwang cifs vers=1.0,user=yjwang,pass=yjwang,noauto,uid=9362 0 0
